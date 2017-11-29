@@ -1,3 +1,3 @@
 # Learning-List
 
-Some notes for learning 
+Some notes for learning
