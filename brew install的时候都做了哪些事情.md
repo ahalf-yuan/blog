@@ -3,7 +3,7 @@
 通常，当我们拿到一台崭新的MAC电脑，都会安装Homebrew来管理软件包；  
 类似于，Linux系统Redhat系列的 yum 以及Debian系列的 apt-get.
 
-### 使用Homebrew的优点
+### 为什么使用Homebrew
 We all know, Mac下源码的手动安装一般需要经过下面几个步骤：  
 ```
 1.wget：下载压缩包  
@@ -16,7 +16,7 @@ We all know, Mac下源码的手动安装一般需要经过下面几个步骤：
 如果安装过程中有很多的依赖库，手动解决这些依赖库是十分痛苦的事情，还可能会涉及一些环境变量的设置等操作。  
 Homebrew解决了以上繁琐的安装过程，HB会将套件安装到独立目录，并将文件软链接至 /usr/local ，所有文件均会被安装到预定义目录下，所以无需担心 Homebrew 的安装位置。也可以方便的对包进行更新、卸载等操作。  
 
-### brew install的时候做了什么  
+### brew install的时候具体做了什么  
 待补充  
 install屏幕输出
 
