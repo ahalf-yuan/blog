@@ -4,7 +4,7 @@
 类似于，Linux系统Redhat系列的 yum 以及Debian系列的 apt-get.
 
 ### 为什么使用Homebrew
-We all know, Mac下源码的手动安装一般需要经过下面几个步骤：  
+As we all know, Mac下源码的手动安装一般需要经过下面几个步骤：  
 ```
 1.wget：下载压缩包  
 2.tar：解压这个源码软件包  
