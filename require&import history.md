@@ -9,7 +9,7 @@ es6以前，通行但非官方标准：CommonJS 和 AMD
 主CommonJS使用的require方式  
 暴露模块使用 `module.exports和exports`  
 加载模块使用全局方法 `require()`  
-- ##### AMD的诞生  
+- ##### AMD的诞生 -- *CommonJS同步加载在浏览器端局限*
 CommonJS规范在浏览器环境的局限，比如以下两行代码：  
 ```javascript
 var math = require('math');
