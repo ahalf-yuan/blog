@@ -45,6 +45,11 @@ export/import
   
 import()函数，完成动态加载
 
+### 问题
+- ##### 问题1  [链接](http://imweb.io/topic/582293894067ce9726778be9)  
+`why???`  ES6发布的module并没有直接采用CommonJS，甚至连require都没有采用，也就是说require仍然只是node的一个私有的全局方法，module.exports也只是node私有的一个全局变量属性，跟标准半毛钱关系都没有。  
+
+
 
 
 
