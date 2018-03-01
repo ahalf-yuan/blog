@@ -48,7 +48,7 @@ var domNodes = Array.prototype.slice.call(document.getElementsByTagName("*"))
 并不具有数组的一些方法，只能能通过Array.prototype.slice转换为真正的数组，并且带有length属性的对象。  
 
 ```json
-var obj = {0:'a',1:'b',length:2}; // 伪数组
+var obj = {"0":"a","1":"b","length":2}; // 伪数组
 ```  
 - ##### 伪数组转换成真正的数组   
 `Array.prototype.slice.call(ArrayLike)`   
