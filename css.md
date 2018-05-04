@@ -32,5 +32,46 @@
 ##### @font-face  
 > [css3 @font-face](https://www.w3cplus.com/content/css3-font-face)  
 
-@font-face是CSS3中的一个模块，他主要是把自己定义的Web字体嵌入到你的网页中。
+@font-face是CSS3中的一个模块，他主要是把自己定义的Web字体嵌入到你的网页中。  
+- 首先去网站下载自己想要的字体,例如[Google Fonts](https://fonts.google.com/)或[DaFont](https://www.dafont.com/)  
+- 获取@font-face所需的.eot,.woff,.ttf,.svg等字体格式,通过第三方工具或者软件来实现，例如 fontsquirrel。  
+- 文件放入项目中，定义，使用  
+```css
+   @font-face {
+      font-family: 'SingleMaltaRegular';
+      src: url('../fonts/singlemalta-webfont.eot');
+      src: url('../fonts/singlemalta-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/singlemalta-webfont.woff') format('woff'),
+	   url('../fonts/singlemalta-webfont.ttf') format('truetype'),
+	   url('../fonts/singlemalta-webfont.svg#SingleMaltaRegular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   
+   h2.singleMalta {
+     font-family: 'SingleMaltaRegular'
+   }
+```  
+#### 
+## 常用实现  
+> [谈谈一些有趣的 CSS 话题](https://github.com/chokcoco/iCSS)  
 
+#### 文本单行省略与多行省略  
+```css
+/*
+ * 单行
+ * 需要 width
+ */
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap; /*连续的空白符会被合并。文本内的换行无效*/
+------------------
+
+/* 多行 */
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: N; /* 控制显示的行数 */
+line-height: X;        /* 对不支持浏览器的 */
+max-height: X*N;       /* 对不支持浏览器的弥补 */
+```  
