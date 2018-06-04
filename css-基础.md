@@ -1,4 +1,4 @@
-# css  
+# css-基础  
 
 #### 移动端字体 
 > [你该知道的字体 font-family](https://github.com/chokcoco/iCSS/issues/6)
@@ -104,6 +104,12 @@ inline元素**设置width,height属性无效。
 inline元素的margin和padding属性，水平方向的padding-left, padding-right, margin-left, margin-right都产生边距效果；但竖直方向的padding-top, padding-bottom, margin-top, margin-bottom不会产生边距效果。**
 - display:inline-block  
 简单来说就是将对象呈现为inline对象，但是对象的内容作为block对象呈现。之后的内联对象会被排列在同一行内。比如我们可以给一个link（a元素）inline-block属性值，使其**既具有block的宽度高度特性又具有inline的同行特性。**  
+
+#### 盒子模型
+
+#### BFC
+
+
 #### inline-block布局问题  
 - **基线对齐**  
 > [css 使用display：inline-block的问题求解？](https://www.zhihu.com/question/28057944) 
