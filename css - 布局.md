@@ -200,4 +200,6 @@ margin： 0 auto
     height: 3000px;
     background: yellow;
 }
-```
+``` 
+### 移动端  
+主要 flex + rem
