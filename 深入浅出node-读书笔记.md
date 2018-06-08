@@ -60,4 +60,9 @@ b. 执行
 
 8.AMD & CMD
 
+9.ES6 模块 与 CommonJS 规范区别
+> http://es6.ruanyifeng.com/#docs/module-loader
+
+
+
 
