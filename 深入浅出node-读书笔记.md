@@ -83,4 +83,39 @@ b. 执行
 
 > [官方文档](https://nodejs.org/api/modules.html#modules_cycles)
 
+10.兼容多种模块规范  
+```javascript
+(function (name, definition) {
+	var hasDefine = typeof define === 'function';
+	var hasExports = typeof module !== 'undefined' && module.exports;
+
+	if (hasDefine) {
+		define(definition);
+	} else if (hasExports) {
+		module.exports = definition();
+	} else {
+		this[name] = definition();
+	}
+})('hello', function () {
+	var hello = function () {};
+	return hello;
+})
+```
+
+### 二.异步IO  
+1.为什么要异步IO
+
+- 用户体验  
+浏览器 javascript 在单线程上执行，并且与UI渲染共用一个线程，同步情况下，当脚本执行时，UI渲染阻塞。  
+- 资源分配  
+单线程阻塞IO使硬件资源得不到最优使用；多线程存在死锁、状态同步等问题！  
+Node 提供类似Web Workers 的子进程。  
+
+2.Node 的异步IO  
+（1）异步IO的几个关键词：单线程、事件循环、观察者 和 IO线程池  
+（2）除了用户代码不能并行执行以外，所有IO都是可以并行起来。  
+
+3.其他异步 API  
+setTimeout(),setInterval(),process.nextTick()  
+(1) setTimeout(),setInterval() 创建的定时器会被插入到定时器观察者内部的一个红黑树中；process.nextTick() 只会将回调函数放入队列中。前者复杂度O(lg(n)),后者O(1),后者更高效。
 
