@@ -134,3 +134,36 @@ fetch('https://www.baidu.com', {
 - XHR只能同域获取cookie，但是Fetch可以自己配置
 
 - Fetch有Header Class，可以修改读取headers，并且提供了ES6的迭代器来操作
+
+
+#### fetch 异常处理
+
+> [Fetch请求如何拦截后面的then](http://react-china.org/t/fetch-then/7054/3)
+​
+```javascript
+function myFetch(url) {
+  return fetch(url).then(res => {
+    if (res.ok) {
+      return res.json();
+    } else {      
+      throw `${res.status}, ${res.statusText}`;
+    }
+  })
+  .then(json => {
+    return json;
+  })
+  .catch(err => {
+    throw err;
+  });
+}
+​
+// 调用 myFetch 代码
+​
+meFetch(url)
+.then((data) => {
+  // 处理正确返回的数据
+})
+.catch((error) => {
+  // 处理错误
+});
+```
