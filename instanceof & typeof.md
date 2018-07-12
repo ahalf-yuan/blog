@@ -33,3 +33,7 @@ function new_instance_of(leftVaule, rightVaule) {
 
 }
 ```
+
+> [继承的优缺点](https://github.com/mqyqingfeng/Blog/issues/16)
+
+
