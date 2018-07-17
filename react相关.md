@@ -36,6 +36,9 @@ https://juejin.im/post/5abf4a09f265da237719899d
 方法  
 - `react-dom/server` 中 `renderToString` 和 `renderToStaticMarkup` 方法
 
+其他
+> [React16中的服务端渲染（译）](http://imweb.io/topic/59dc46db856028aa249e2a57)  
+- React 16 支持 Streaming
 
 ## todo
 
