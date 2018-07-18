@@ -10,7 +10,6 @@ https://juejin.im/post/5abf4a09f265da237719899d
 > [React 源码剖析系列 － 生命周期的管理艺术](https://zhuanlan.zhihu.com/p/20312691)
 ![](/images/1531798876dr.png)  
 
-
 #### SSR
 > [Vue SSR 指南](https://ssr.vuejs.org/zh/#%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%B8%B2%E6%9F%93-ssr-%EF%BC%9F)
 
@@ -37,11 +36,24 @@ https://juejin.im/post/5abf4a09f265da237719899d
 - `react-dom/server` 中 `renderToString` 和 `renderToStaticMarkup` 方法
 
 其他
-> [React16中的服务端渲染（译）](http://imweb.io/topic/59dc46db856028aa249e2a57)  
-- React 16 支持 Streaming
 
-## todo
+> [React16中的服务端渲染（译）](http://imweb.io/topic/59dc46db856028aa249e2a57)  - React 16 支持 Streaming
 
+##### 总结参考 
+> [React 16 加载性能优化指南](https://zhuanlan.zhihu.com/p/37148975)  
+
+这篇文章里，我们一共提到了下面这些优化加载的点：  
+- 在 HTML 内实现 Loading 态或者骨架屏；  
+- 去掉外联 css；  
+- 缓存基础框架；  
+- 使用动态 polyfill；  
+- 使用 SplitChunksPlugin 拆分公共代码；  
+- 正确地使用 Webpack 4.0 的 Tree Shaking；  
+- 使用动态 import，切分页面代码，减小首屏 JS 体积；  
+- 编译到 ES2015+，提高代码运行效率，减小体积；  
+- 使用 lazyload 和 placeholder 提升加载体验。  
+  
+> [React v16.3 版本新生命周期函数浅析及升级方案](https://zhuanlan.zhihu.com/p/36062486)  
 
 
 
