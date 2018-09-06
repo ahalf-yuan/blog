@@ -55,6 +55,14 @@ https://juejin.im/post/5abf4a09f265da237719899d
   
 > [React v16.3 版本新生命周期函数浅析及升级方案](https://zhuanlan.zhihu.com/p/36062486)  
 
+##### noflux  
+> [noflux 中文](https://noflux.js.org/zh/migration/)  
+
+- Noflux 所暴露的接口非常少，准确讲只有 state 与connect。  
+(1) state 维护着全局唯一的状态，并提供如 get、set 之类的接口供数据操作。
+与 Redux 类似，Noflux 使用 单一数据源 ，**且 state 是不可变的（immutable）**——虽然它的操作方法看起来不像。  
+(2) @connect 修饰符将跟踪 state 的变化并智能的重新渲染组件。   
+如果一个组件通过 state.get 获取的值被修改了，那么这个组件将通过 forceUpdate 被重新渲染，这意味着它的 render 方法将会被调用。
 
 
 
