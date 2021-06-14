@@ -1,0 +1,58 @@
+{
+  "_from": "hexo-theme-simpleblock",
+  "_id": "hexo-theme-simpleblock@0.2.1",
+  "_inBundle": false,
+  "_integrity": "sha1-ppIt+6d4K+VmJQCUv2fcql79iwU=",
+  "_location": "/hexo-theme-simpleblock",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "hexo-theme-simpleblock",
+    "name": "hexo-theme-simpleblock",
+    "escapedName": "hexo-theme-simpleblock",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hexo-theme-simpleblock/-/hexo-theme-simpleblock-0.2.1.tgz",
+  "_shasum": "a6922dfba7782be566250094bf67dcaa5efd8b05",
+  "_spec": "hexo-theme-simpleblock",
+  "_where": "/Users/yuanyazhen/github/hexo-blog/blog",
+  "bugs": {
+    "url": "https://github.com/jysperm/hexo-theme-simpleblock/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "jysperm",
+      "email": "jysperm@gmail.com",
+      "url": "https://jysperm.me"
+    }
+  ],
+  "deprecated": false,
+  "description": "A simple theme for Hexo.",
+  "devDependencies": {
+    "bower": "1.4.1",
+    "gulp": "3.8.10",
+    "gulp-add-src": "0.2.0",
+    "gulp-concat": "2.4.3",
+    "gulp-less": "2.0.1",
+    "gulp-minify-css": "0.4.2",
+    "gulp-order": "1.1.1",
+    "gulp-sass": "2.0.4",
+    "main-bower-files": "2.5.0"
+  },
+  "homepage": "https://jysperm.me",
+  "license": "MIT",
+  "name": "hexo-theme-simpleblock",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jysperm/hexo-theme-simpleblock.git"
+  },
+  "version": "0.2.1"
+}
