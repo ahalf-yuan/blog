@@ -305,6 +305,11 @@ header .logo-link {
 	transform: rotate(0deg);
 	transition: 0.6s ease-in-out;
 }
+header .logo-link {
+    color: #eee;
+    font-size: 26px;
+    font-weight: bold;
+}
 header .logo-link:hover {
 	transform: rotate(360deg);
 }
