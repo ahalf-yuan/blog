@@ -1,0 +1,11 @@
+# Hexo blog
+
+- Theme: https://github.com/bulandent/hexo-theme-bubuzou
+
+### How to deploy? 
+- command
+```
+hexo generate
+hexo s --watch # run
+hexo deploy
+```
