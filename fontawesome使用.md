@@ -122,7 +122,7 @@ fontawesome-free-5.15.3-web
 </details>
 
 ##### 2. 使用方式
-- 全量使用
+- 全量使用  
   all.js 中包含四种类型的图标，因而在使用中覆盖的图标类型比较全面。
   使用时引入 `all.js`, 然后将 `webfonts` 整个目录拷贝在项目中。
   ```html
@@ -137,7 +137,7 @@ fontawesome-free-5.15.3-web
    <i class="fab fa-github-square"></i> <!-- uses brands style -->
    </body>
   ```
-- 使用某一种类型
+- 使用某一种类型  
   如果是只想使用到 solid, regular, light, brand 中的一种。
   需要引入 `fontawesome.css` 以及待使用类型的 css，比如 `brands.css`，然后将 `webfonts` 中对应的字体文件拷贝进项目即可。
   ```html
@@ -153,7 +153,7 @@ fontawesome-free-5.15.3-web
    </body>
   ```
 
-- 使用svg图标
+- 使用svg图标  
    需要 `all.js`，以及相关的 svg 文件
    ```html
    <head>
